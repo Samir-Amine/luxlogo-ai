@@ -18,7 +18,7 @@ const GENERATE_PROMPT_WEBHOOK = "https://hook.eu1.make.com/9t5mn39mdvd4evqkl4ic2
 const GENERATE_LOGO_WEBHOOK = "https://hook.eu1.make.com/mej3b8m128tjki7f7mk453uv4dfpw62k";
 
 /** Optional: webhook for the contact form. Leave empty to use a mailto fallback. */
-const CONTACT_WEBHOOK = "";
+const CONTACT_WEBHOOK = "https://hook.eu1.make.com/tdy7in4wqt7rel9llwslbc3vseshflmr";
 
 /** Network timeout for webhook requests, in milliseconds. */
 const REQUEST_TIMEOUT_MS = 120000;
