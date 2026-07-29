@@ -15,7 +15,7 @@
 const GENERATE_PROMPT_WEBHOOK = "https://hook.eu1.make.com/9t5mn39mdvd4evqkl4ic237mmrnv8bgh";
 
 /** Webhook that receives an approved prompt and returns logo URLs. */
-const GENERATE_LOGO_WEBHOOK = "";
+const GENERATE_LOGO_WEBHOOK = "https://hook.eu1.make.com/mej3b8m128tjki7f7mk453uv4dfpw62k";
 
 /** Optional: webhook for the contact form. Leave empty to use a mailto fallback. */
 const CONTACT_WEBHOOK = "";
