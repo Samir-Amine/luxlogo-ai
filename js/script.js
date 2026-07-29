@@ -12,7 +12,7 @@
    ============================================================ */
 
 /** Webhook that receives company info and returns an AI prompt. */
-const GENERATE_PROMPT_WEBHOOK = "";
+const GENERATE_PROMPT_WEBHOOK = "https://hook.eu1.make.com/9t5mn39mdvd4evqkl4ic237mmrnv8bgh";
 
 /** Webhook that receives an approved prompt and returns logo URLs. */
 const GENERATE_LOGO_WEBHOOK = "";
