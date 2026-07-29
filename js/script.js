@@ -11,14 +11,16 @@
    CONFIG — paste your Make.com Webhook URLs here
    ============================================================ */
 
-/** Webhook that receives company info and returns an AI prompt. */
-const GENERATE_PROMPT_WEBHOOK = "https://hook.eu1.make.com/9t5mn39mdvd4evqkl4ic237mmrnv8bgh";
+/**
+ * Single Make.com webhook that handles every action (generate_prompt,
+ * generate_logo, contact, ...). The scenario's Router module reads the
+ * `action` field on each payload to decide what to do.
+ * Leave empty to use the contact form's mailto fallback.
+ */
+const MAKE_WEBHOOK = "https://hook.eu1.make.com/iylp2vjf4iwuelklbyd249q80ek3lez4";
 
-/** Webhook that receives an approved prompt and returns logo URLs. */
-const GENERATE_LOGO_WEBHOOK = "https://hook.eu1.make.com/mej3b8m128tjki7f7mk453uv4dfpw62k";
-
-/** Optional: webhook for the contact form. Leave empty to use a mailto fallback. */
-const CONTACT_WEBHOOK = "https://hook.eu1.make.com/tdy7in4wqt7rel9llwslbc3vseshflmr";
+/** Sent with every payload so Make.com can handle older/newer shapes gracefully. */
+const PAYLOAD_VERSION = "1.0";
 
 /** Network timeout for webhook requests, in milliseconds. */
 const REQUEST_TIMEOUT_MS = 120000;
@@ -389,7 +391,12 @@ async function generatePrompt() {
   hideResults();
 
   try {
-    const data = await postWebhook(GENERATE_PROMPT_WEBHOOK, collectFormData());
+    const payload = {
+      action: 'generate_prompt',
+      version: PAYLOAD_VERSION,
+      ...collectFormData(),
+    };
+    const data = await postWebhook(MAKE_WEBHOOK, payload);
     const prompt = extractPrompt(data);
     displayPrompt(prompt);
     hideLoading();
@@ -440,11 +447,13 @@ async function generateLogo() {
 
   try {
     const payload = {
+      action: 'generate_logo',
+      version: PAYLOAD_VERSION,
       ...collectFormData(),
       prompt,
       timestamp: new Date().toISOString(),
     };
-    const data = await postWebhook(GENERATE_LOGO_WEBHOOK, payload);
+    const data = await postWebhook(MAKE_WEBHOOK, payload);
 
     if (data && data.success === false) {
       throw { type: 'logic', message: data.message || 'Logo generation failed on the server.' };
@@ -724,6 +733,8 @@ function initContactForm() {
     if (!validateContactForm()) return;
 
     const payload = {
+      action: 'contact',
+      version: PAYLOAD_VERSION,
       name: $('#contactName').value.trim(),
       email: $('#contactEmail').value.trim(),
       message: $('#contactMessage').value.trim(),
@@ -732,7 +743,7 @@ function initContactForm() {
 
     setContactStatus('Sending your message...', 'success');
 
-    if (!CONTACT_WEBHOOK) {
+    if (!MAKE_WEBHOOK) {
       // Fallback: open the user's mail client.
       const body = encodeURIComponent(`Name: ${payload.name}\nEmail: ${payload.email}\n\n${payload.message}`);
       window.location.href = `mailto:hello@luxlogo.ai?subject=LuxLogo%20AI%20Contact&body=${body}`;
@@ -741,7 +752,7 @@ function initContactForm() {
     }
 
     try {
-      await postWebhook(CONTACT_WEBHOOK, payload);
+      await postWebhook(MAKE_WEBHOOK, payload);
       setContactStatus('Thanks! Your message has been sent.', 'success');
       dom.contactForm.reset();
     } catch (err) {
