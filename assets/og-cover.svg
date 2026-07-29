@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b0f1a"/>
+      <stop offset="1" stop-color="#0d1322"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7B7"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="text" x1="300" y1="280" x2="900" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8af0c4"/>
+      <stop offset="0.5" stop-color="#93c5fd"/>
+      <stop offset="1" stop-color="#c9a96a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(540,150)">
+    <rect x="0" y="0" width="120" height="120" rx="34" fill="url(#brand)"/>
+    <path d="M44 38v56h31" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="600" y="380" text-anchor="middle" font-family="Sora, Inter, sans-serif" font-size="72" font-weight="800" fill="url(#text)">LuxLogo AI</text>
+  <text x="600" y="450" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="400" fill="#a3acc2">Create Luxury AI Logos in Seconds</text>
+</svg>

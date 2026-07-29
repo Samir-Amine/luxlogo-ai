@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>LuxLogo AI — Create Luxury AI Logos in Seconds</title>
+    <meta name="title" content="LuxLogo AI — Create Luxury AI Logos in Seconds" />
+    <meta
+      name="description"
+      content="Generate professional, luxury logos using AI by entering only your company information. Premium branding in seconds — powered by Make.com automation."
+    />
+    <meta name="theme-color" content="#0b0f1a" />
+    <meta name="author" content="LuxLogo AI" />
+    <link rel="canonical" href="https://luxlogo.ai/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="./assets/favicon.svg" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://luxlogo.ai/" />
+    <meta property="og:title" content="LuxLogo AI — Create Luxury AI Logos in Seconds" />
+    <meta
+      property="og:description"
+      content="Generate professional, luxury logos using AI by entering only your company information. Premium branding in seconds."
+    />
+    <meta property="og:image" content="./assets/og-cover.svg" />
+    <meta property="og:site_name" content="LuxLogo AI" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://luxlogo.ai/" />
+    <meta name="twitter:title" content="LuxLogo AI — Create Luxury AI Logos in Seconds" />
+    <meta
+      name="twitter:description"
+      content="Generate professional, luxury logos using AI by entering only your company information. Premium branding in seconds."
+    />
+    <meta name="twitter:image" content="./assets/og-cover.svg" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ============================= -->
+    <!-- HEADER / NAVBAR               -->
+    <!-- ============================= -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="brand" aria-label="LuxLogo AI home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="28" height="28" rx="9" fill="url(#brandGrad)" />
+              <path d="M11 9.5v13h7.2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+              <defs>
+                <linearGradient id="brandGrad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#6EE7B7" />
+                  <stop offset="1" stop-color="#3B82F6" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand-name">LuxLogo<span class="brand-accent"> AI</span></span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#how" class="nav-link">How It Works</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#generator" class="btn btn-primary btn-sm" data-cta="nav">
+            Generate Logo
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================= -->
+      <!-- HERO                          -->
+      <!-- ============================= -->
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="grid-overlay"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <div class="badge fade-up">
+            <span class="badge-dot"></span> AI-Powered Logo Studio
+          </div>
+          <h1 class="hero-title fade-up" style="--d: 0.05s">
+            Create Luxury AI Logos<br /><span class="gradient-text">in Seconds</span>
+          </h1>
+          <p class="hero-sub fade-up" style="--d: 0.1s">
+            Generate professional logos using AI by entering only your company information.
+            Premium branding, no design skills required.
+          </p>
+          <div class="hero-cta fade-up" style="--d: 0.15s">
+            <a href="#generator" class="btn btn-primary btn-lg" data-cta="hero">
+              Start Creating
+            </a>
+            <a href="#how" class="btn btn-ghost btn-lg">See How It Works</a>
+          </div>
+
+          <div class="hero-stats fade-up" style="--d: 0.2s">
+            <div class="stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Logos / request</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num">~30s</span>
+              <span class="stat-label">Avg. generation</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num">High-Res</span>
+              <span class="stat-label">PNG exports</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- LOGO GENERATOR                -->
+      <!-- ============================= -->
+      <section class="section generator" id="generator">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Logo Generator</span>
+            <h2 class="section-title">Design your logo</h2>
+            <p class="section-sub">Fill in your company details and let AI craft a luxury logo for you.</p>
+          </div>
+
+          <div class="card glass generator-card">
+            <!-- FORM -->
+            <form id="logoForm" class="generator-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="companyName">Company Name <span class="req">*</span></label>
+                  <input type="text" id="companyName" name="companyName" placeholder="e.g. Aurora Studios" required autocomplete="organization" />
+                  <span class="field-error" data-error-for="companyName"></span>
+                </div>
+
+                <div class="field">
+                  <label for="industry">Industry <span class="req">*</span></label>
+                  <input type="text" id="industry" name="industry" placeholder="e.g. Luxury Fashion" required autocomplete="off" />
+                  <span class="field-error" data-error-for="industry"></span>
+                </div>
+
+                <div class="field">
+                  <label for="tagline">Tagline</label>
+                  <input type="text" id="tagline" name="tagline" placeholder="e.g. Crafted for the bold" autocomplete="off" />
+                </div>
+
+                <div class="field">
+                  <label for="logoStyle">Logo Style</label>
+                  <select id="logoStyle" name="logoStyle">
+                    <option value="">Any</option>
+                    <option value="minimal">Minimal</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="modern">Modern</option>
+                    <option value="vintage">Vintage</option>
+                    <option value="geometric">Geometric</option>
+                    <option value="emblem">Emblem</option>
+                    <option value="wordmark">Wordmark</option>
+                    <option value="mascot">Mascot</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="primaryColor">Primary Color</label>
+                  <div class="color-field">
+                    <input type="color" id="primaryColor" name="primaryColor" value="#0b0f1a" />
+                    <input type="text" id="primaryColorText" class="color-text" value="#0b0f1a" placeholder="#000000" aria-label="Primary color hex" />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="secondaryColor">Secondary Color</label>
+                  <div class="color-field">
+                    <input type="color" id="secondaryColor" name="secondaryColor" value="#c9a96a" />
+                    <input type="text" id="secondaryColorText" class="color-text" value="#c9a96a" placeholder="#000000" aria-label="Secondary color hex" />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="iconPreference">Icon Preference</label>
+                  <select id="iconPreference" name="iconPreference">
+                    <option value="">Any</option>
+                    <option value="abstract">Abstract</option>
+                    <option value="lettermark">Lettermark</option>
+                    <option value="monogram">Monogram</option>
+                    <option value="symbol">Symbol</option>
+                    <option value="nature">Nature-inspired</option>
+                    <option value="animal">Animal</option>
+                    <option value="none">No icon</option>
+                  </select>
+                </div>
+
+                <div class="field field-full">
+                  <label for="instructions">Additional Instructions</label>
+                  <textarea id="instructions" name="instructions" rows="3" placeholder="e.g. Use gold foil accents, elegant serif typography, evoke a sense of heritage..."></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-secondary" id="generatePromptBtn">
+                  Generate Prompt
+                </button>
+                <button type="button" class="btn btn-ghost" id="regeneratePromptBtn" disabled>
+                  Regenerate Prompt
+                </button>
+                <button type="button" class="btn btn-primary" id="generateLogoBtn" disabled>
+                  Generate Logo
+                </button>
+              </div>
+            </form>
+
+            <!-- PROMPT PREVIEW -->
+            <div class="prompt-preview" id="promptPreview" hidden>
+              <div class="prompt-head">
+                <h3>AI Prompt</h3>
+                <span class="prompt-hint">Editable — refine it before generating your logo.</span>
+              </div>
+              <textarea id="promptText" class="prompt-textarea" rows="6" placeholder="Your generated prompt will appear here. You can edit it freely."></textarea>
+              <div class="prompt-actions">
+                <button type="button" class="btn btn-secondary btn-sm" id="regeneratePromptBtn2">
+                  Regenerate Prompt
+                </button>
+                <button type="button" class="btn btn-primary btn-sm" id="generateLogoBtn2">
+                  Generate Logo
+                </button>
+              </div>
+            </div>
+
+            <!-- LOADING -->
+            <div class="loading-state" id="loadingState" hidden>
+              <div class="loader">
+                <div class="loader-ring"></div>
+                <div class="loader-ring loader-ring-2"></div>
+              </div>
+              <h3 class="loading-title" id="loadingTitle">Generating...</h3>
+              <p class="loading-sub" id="loadingSub">This usually takes a few seconds.</p>
+              <div class="loading-bar" aria-hidden="true"><span id="loadingBarFill"></span></div>
+            </div>
+
+            <!-- ERROR -->
+            <div class="error-state" id="errorState" hidden>
+              <div class="error-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+              </div>
+              <h3 class="error-title" id="errorTitle">Something went wrong</h3>
+              <p class="error-sub" id="errorSub">Please try again.</p>
+              <button type="button" class="btn btn-secondary btn-sm" id="errorRetryBtn">Try Again</button>
+            </div>
+
+            <!-- SUCCESS + RESULTS -->
+            <div class="results-section" id="resultsSection" hidden>
+              <div class="success-banner" id="successBanner">
+                <span class="success-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Your luxury logo is ready!</span>
+              </div>
+
+              <div class="results-head">
+                <h3>Your Logos</h3>
+                <button type="button" class="btn btn-ghost btn-sm" id="newBatchBtn">Start Over</button>
+              </div>
+
+              <div class="gallery" id="gallery" aria-live="polite">
+                <!-- Logo cards injected by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- FEATURES                      -->
+      <!-- ============================= -->
+      <section class="section features" id="features">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Features</span>
+            <h2 class="section-title">Everything you need for a premium brand</h2>
+            <p class="section-sub">Powerful AI meets refined design — built for founders, agencies, and creators.</p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-card glass">
+              <div class="feature-icon icon-1">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.5 4 3 5l1 1v3a3 3 0 0 0 6 0v-3l1-1c1.5-1 3-2.5 3-5a7 7 0 0 0-7-7z"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+              </div>
+              <h3>Premium AI</h3>
+              <p>State-of-the-art models tuned for luxury aesthetics and brand-grade output.</p>
+            </article>
+
+            <article class="feature-card glass">
+              <div class="feature-icon icon-2">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </div>
+              <h3>Fast Generation</h3>
+              <p>From idea to logo in seconds. Four unique concepts delivered per request.</p>
+            </article>
+
+            <article class="feature-card glass">
+              <div class="feature-icon icon-3">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+              </div>
+              <h3>Professional Branding</h3>
+              <p>Consistent typography, color theory, and composition built into every result.</p>
+            </article>
+
+            <article class="feature-card glass">
+              <div class="feature-icon icon-4">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.5 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>
+              </div>
+              <h3>Luxury Design</h3>
+              <p>Refined, high-end aesthetics inspired by world-class brand identities.</p>
+            </article>
+
+            <article class="feature-card glass">
+              <div class="feature-icon icon-5">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 3v18"/></svg>
+              </div>
+              <h3>High Resolution</h3>
+              <p>Crisp, downloadable PNG exports ready for web, print, and social.</p>
+            </article>
+
+            <article class="feature-card glass">
+              <div class="feature-icon icon-6">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18l7-4 7 4V3z"/></svg>
+              </div>
+              <h3>Unlimited Creativity</h3>
+              <p>Generate as many variations as you like — tweak, refine, and iterate freely.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- HOW IT WORKS                  -->
+      <!-- ============================= -->
+      <section class="section how" id="how">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">How It Works</span>
+            <h2 class="section-title">From idea to logo in 8 steps</h2>
+            <p class="section-sub">A seamless pipeline connecting your input to AI-generated luxury logos.</p>
+          </div>
+
+          <ol class="steps">
+            <li class="step glass">
+              <span class="step-num">1</span>
+              <p>Enter your company information.</p>
+            </li>
+            <li class="step glass">
+              <span class="step-num">2</span>
+              <p>Website sends data to Make.com.</p>
+            </li>
+            <li class="step glass">
+              <span class="step-num">3</span>
+              <p>Make.com generates the AI prompt.</p>
+            </li>
+            <li class="step glass">
+              <span class="step-num">4</span>
+              <p>User reviews or edits the prompt.</p>
+            </li>
+            <li class="step glass">
+              <span class="step-num">5</span>
+              <p>Website sends the approved prompt to Make.com.</p>
+            </li>
+            <li class="step glass">
+              <span class="step-num">6</span>
+              <p>Make.com generates logo images.</p>
+            </li>
+            <li class="step glass">
+              <span class="step-num">7</span>
+              <p>Website receives image URLs.</p>
+            </li>
+            <li class="step glass">
+              <span class="step-num">8</span>
+              <p>Display downloadable logos.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- FAQ                           -->
+      <!-- ============================= -->
+      <section class="section faq" id="faq">
+        <div class="container container-narrow">
+          <div class="section-head">
+            <span class="eyebrow">FAQ</span>
+            <h2 class="section-title">Frequently asked questions</h2>
+          </div>
+
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>How does LuxLogo AI work?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>You enter your company details, Make.com generates an AI prompt, you review or edit it, and Make.com produces four luxury logo concepts you can download instantly.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Do I need design skills?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>No. Just describe your brand — company name, industry, and style preferences — and the AI handles the rest.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>What format are the logos delivered in?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>Logos are delivered as high-resolution PNG files, ready for web, print, and social media use.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Can I edit the AI prompt?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>Yes. After the prompt is generated it appears in an editable box — refine it freely before generating your logos.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>How many logos do I get per request?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>Each generation returns four unique logo concepts. You can regenerate or start a new batch anytime.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Is my data stored?</span>
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-panel">
+                <p>Processing is handled by Make.com automation. LuxLogo AI is a static frontend — no database is used on this site.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- CONTACT                       -->
+      <!-- ============================= -->
+      <section class="section contact" id="contact">
+        <div class="container container-narrow">
+          <div class="section-head">
+            <span class="eyebrow">Contact</span>
+            <h2 class="section-title">Get in touch</h2>
+            <p class="section-sub">Questions, partnerships, or feedback — we'd love to hear from you.</p>
+          </div>
+
+          <form id="contactForm" class="card glass contact-form" novalidate>
+            <div class="field">
+              <label for="contactName">Name <span class="req">*</span></label>
+              <input type="text" id="contactName" name="contactName" required autocomplete="name" />
+              <span class="field-error" data-error-for="contactName"></span>
+            </div>
+            <div class="field">
+              <label for="contactEmail">Email <span class="req">*</span></label>
+              <input type="email" id="contactEmail" name="contactEmail" required autocomplete="email" />
+              <span class="field-error" data-error-for="contactEmail"></span>
+            </div>
+            <div class="field">
+              <label for="contactMessage">Message <span class="req">*</span></label>
+              <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+              <span class="field-error" data-error-for="contactMessage"></span>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+            <p class="form-status" id="contactStatus" role="status" hidden></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================= -->
+    <!-- FOOTER                        -->
+    <!-- ============================= -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="28" height="28" rx="9" fill="url(#brandGrad2)" />
+                <path d="M11 9.5v13h7.2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                <defs>
+                  <linearGradient id="brandGrad2" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6EE7B7" />
+                    <stop offset="1" stop-color="#3B82F6" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="brand-name">LuxLogo<span class="brand-accent"> AI</span></span>
+          </a>
+          <p class="footer-tag">Luxury AI logos, crafted in seconds.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#features">Features</a>
+          <a href="#how">How It Works</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="#" rel="noopener">Privacy</a>
+          <a href="#" rel="noopener">Terms</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year">2025</span> LuxLogo AI. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </a>
+
+    <!-- Script -->
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
